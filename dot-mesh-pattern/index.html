@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <style>
+      body.\--modal-open {
+  	overflow-y: hidden
+  }
+
+  .modal,
+  body.\--modal-open {
+  	position: fixed;
+  	width: 100%;
+  	height: 100%
+  }
+
+  .background-video {
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	overflow: hidden;
+  	min-width: 320px
+  }
+
+
+  body,
+  html {
+  	padding: 0;
+  	margin: 0;
+  	background-color: #13191c;
+  	color: #fff;
+  	font-family: Roboto, Tahoma, Arial, sans-serif;
+  	min-width: 320px
+  }
+
+  .blocks {
+  	overflow: auto
+  }
+
+  .blocks__block {
+  	position: relative
+  }
+
+
+
+  .videoblock {
+  	width: 100%;
+  	height: calc(100vh - 108px);
+  	min-height: 400px;
+  	background: url("fondo.jpg") no-repeat top/cover, #3d4c55; /* Background Image */
+  	overflow: hidden
+  }
+
+  .videoblock__overlay {
+  	text-align: center;
+  	position: relative;
+  	height: 100%
+  }
+
+  .videoblock__overlay--en {
+  	background:  url("download.png") repeat /* Pattern Image */
+  }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div style="width:150px;height:150px;overflow:hidden;"> <!-- Div condenedor-->
+    <div class="blocks">
+      <meta name="viewport" content="width=device-width">
+    <div class="blocks__block block --video videoblock">
+        <div class="background-video">
+          <video> </video> <!--Video-->
+        </div>
+        <div class="videoblock__overlay videoblock__overlay--en">
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
